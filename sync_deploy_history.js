@@ -20,7 +20,7 @@ async function sync_deploy_history() {
   function git(...args) {
     return spawn('git', args, {
       verbose: true,
-      stdio: 'inherit'
+      stdio: 'pipe'
     });
   }
 
